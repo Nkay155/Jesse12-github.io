@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A page dedicated to Chelsea FC.Stay updated on all things Chelsea FC .Get the latest news,match analyses,player highlights and in-depth insights into the legendary football club.From Stamford Bridge excitement to the team's historical achievement,dive into the world of Chelsea football with our dedicated coverage">
+    <meta name="keywords" content="Chelsea FC,Chelsea FC news,Chelsea matches,Chelsea players,fan webpage,Glitch fc,Chelsea fan community ">
+    <title>DREAM-TEAM</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="background/chelsea-fc-png-clipart.jpg" type="png">
+    <style>
+        body{
+            background-image: url(background/fernando-torres-chelsea-fc-soccer-wallpaper-poster-1-v091121-092-original-imag8kvtxgwehsu5.webp);
+            background-size: contain;
+        }
+        #teamx-gk{
+            display: flex;
+            height: 30vh;
+            justify-content: left;
+            align-items: center;
+            width: 100%;
+            column-gap: 20px;
+            padding-left: 20px;
+        }
+        .plyer-box{
+            width: 300px;
+            height: 30vh;
+            color: rgb(255, 255, 255);
+            position: relative;
+           filter:grayscale();
+           border-radius: 30px;
+        }
+        .plyer-box:hover{
+            filter: grayscale(0%);
+            
+        }
+        .plyer-txt{
+            width: 50%;
+            height: 130px;
+            text-align:center;
+            position: absolute;
+            bottom: 0;
+            left: 25%;
+            color:rgb(249, 249, 250);
+            
+           
+        }
+        .plyer-txt:hover{
+            
+            cursor: pointer;
+        }
+        .plyer-txt p{
+            padding-top: -15px;
+            font-size: 20px;
+          
+        }
+        .plyer-txt h2{
+            padding-bottom: 10px;
+
+        }
+      /* goalkeepers */
+        .gk1{
+            background-image: url(chelsea/robertsanchez.png);
+            background-size: contain;
+            background-position: cover;
+        }
+        .gk2{
+            background-image: url(chelsea/djordjepetrovic.png);
+            background-size: contain;
+            background-position: cover;
+        }
+        /* defenders */
+        #teamx-df{
+            display: flex;
+            height: 30vh;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            column-gap: 20px;
+            padding-left: 20px;
+            row-gap: 20px;
+        }
+        .df1{
+            background-image: url(chelsea/Thiagosilva.png);
+            background-size: contain;
+            background-position: cover;
+        }
+        .df2{
+            background-image: url(chelsea/benchilwell.png);
+            background-size: contain;
+            background-position: cover;
+        }
+        .df3{
+            background-image: url(chelsea/reecejames.png);
+            background-size: contain;
+            background-position: cover;
+        }
+        .df4{
+            background-image: url(chelsea/marccucurella.png);
+            background-size: contain;
+            background-position: cover;
+        }
+        .df5{
+            background-image: url(chelsea/malogusto.png);
+            background-size: contain;
+            background-position: cover;
+        }
+        .df6{
+            background-image: url(chelsea/levicolwill.png);
+            background-size: contain;
+            background-position: cover;
+        }
+        .df7{
+            background-image: url(chelsea/axeldisasi.png);
+            background-size: contain;
+            background-position: cover;
+        }
+        #teamx-mf{
+            display: flex;
+            height: 30vh;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            column-gap: 20px;
+            padding-left: 20px;
+            row-gap: 20px;
+        }
+        .mf1{
+            background-image: url(chelsea/enzofernandez.png);
+            background-size: contain;
+            background-position: cover;
+        }
+        .mf2{
+            background-image: url(chelsea/mykhailomudryk.png);
+            background-size: contain;
+            background-position: cover;
+        }
+        .mf3{
+            background-image: url(chelsea/conorgallagher.png);
+            background-size: contain;
+            background-position: cover;
+        }
+        .mf4{
+            background-image: url(chelsea/moisescaicedo.png);
+            background-size: contain;
+            background-position: cover;
+        }
+        .mf5{
+            background-image: url(chelsea/lesleyugochukwu.png);
+            background-size: contain;
+            background-position: cover;
+        }
+        .mf6{
+            background-image: url(chelsea/cesarecasadei.png);
+            background-size: contain;
+            background-position: cover;
+        }
+        .mf7{
+            background-image: url(chelsea/colepalmer.png);
+            background-size: contain;
+            background-position: cover;
+        }
+        #teamx-fd{
+            display: flex;
+            height: 30vh;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            column-gap: 20px;
+            padding-left: 20px;
+            row-gap: 20px;
+        }
+        .fd1{
+            background-image: url(chelsea/raheemsterling.png);
+            background-size: contain;
+            background-position: cover;
+        }
+        .fd2{
+            background-image: url(chelsea/NicolasJackson.png);
+            background-size: contain;
+            background-position: cover;
+        }
+        .fd3{
+            background-image: url(chelsea/nonimadueke.png);
+            background-size: contain;
+            background-position: cover;
+        }
+        .fd4{
+            background-image: url(chelsea/christophernkunku.png);
+            background-size: contain;
+            background-position: cover;
+        }
+        .fd5{
+            background-image: url(chelsea/deividwashington.png);
+            background-size: contain;
+            background-position: cover;
+        }
+        #teamx-ch{
+            display: flex;
+            height: 30vh;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            column-gap: 20px;
+            padding-left: 20px;
+            row-gap: 20px;
+        }
+        .ch1{
+            background-image: url(chelsea/Mauricio_Pochettino_profile_23-24_avatar-removebg.webp);
+            background-size: contain;
+            background-position: cover;
+        }
+        h1{
+            text-align: center ;
+            padding-top: 30px;
+        }
+        h1:hover{
+            background: linear-gradient(to right, #372bd8,#fafaf8,#1d11c4);
+                -webkit-text-fill-color: transparent;
+                  -webkit-background-clip: text;
+                   background-clip: i;
+                   cursor: pointer; 
+        }
+        
+        table{
+            background-color:gray;
+            text-align: center;
+        }
+        table:hover{
+            cursor: pointer;
+            background: blue;
+            color: white;    
+            }
+            /* .footer{
+                width: 100%;
+            } */
+    </style>
+</head>
+<div>
+    <div id="container">
+        <div class="header ">
+            <h2 class="fanboy"  >&#8482;</h2>
+
+            <div class="logo-img">
+
+            <img src="background/Chelsea-Logo.png" alt="club logo" title="logo of Chelsea FC" width="150px" height="90px"></div>
+
+            <div class="log-box">
+
+            <div class="log ">
+
+                <button class="log"><a href="Sign.html" style="text-decoration: none;">LOGIN</a></button>
+            </div>
+
+           </div>
+
+        </div>
+        </div>
+      <div class="team-box">
+      <div class="plyers-nav ">
+        <a href="#teamx-gk" class="kpp">GOALKEEPERS</a>
+        <a href="#teamx-df" class="kpp">DEFENDERS</a>
+        <a href="#teamx-mf" class="kpp">MIDFIELDERS</a>
+        <a href="#teamx-fd" class="kpp">FORWARDS</a>
+        <a href="#teamx-ch" class="kpp">COACHING </a>
+        <a href="index.html" class="kpp">HOME</a>
+      </div> 
+       
+   
+      <center><h2 class="intro-txt">FC CHELSEA FIRST TEAM</h2></center>
+      <h1>GOALKEEPERS</h1>
+    <div id="teamx-gk">
+        
+     <div class="plyer-box  gk1">
+        
+        <div class="plyer-txt ">
+           
+            <h3>1</h3>
+         <p>Robert</p>   <h2>Sanchez</h2>
+           
+      
+     </div>
+     </div>
+     <div class="plyer-box  gk2">
+        <div class="plyer-txt ">
+           
+            <h3>28</h3>
+          <p>djordje</p>   <h2>Petrovic</h2>
+        
+      
+     </div>
+     </div>
+     
+   </div>
+
+   <!-- defenders -->
+   <h1>DEFENDERS</h1>
+   <div id="teamx-df">
+       
+    <div class="plyer-box  df1">
+       
+       <div class="plyer-txt ">
+          
+           <h3>6</h3>
+         <p>Thiago</p>  <h2>Silva</h2>
+          
+     
+    </div>
+    </div>
+    <div class="plyer-box df2">
+       <div class="plyer-txt ">
+          
+           <h3>21</h3>
+         <p>Ben</p>  <h2> Chilwell</h2>
+       
+     
+    </div>
+    </div>
+    
+    
+
+  <div class="plyer-box df3">
+    <div class="plyer-txt">
+       
+        <h3>24</h3>
+       <p>Reece</p><h2>   James</h2>
+    
+  
+    </div>
+    </div>
+ </div>
+ <br><br>
+ <div id="teamx-df">
+ <div class="plyer-box  df4">
+    <div class="plyer-txt ">
+       
+        <h3>3</h3>
+       <p> Marc</p>  <h2>Cucurella</h2>
+    
+  
+ </div>
+ </div>
+
+ <div class="plyer-box df5">
+    <div class="plyer-txt ">
+       
+        <h3>26</h3>
+     <p>Malo</p>   <h2>Gusto</h2>
+    
+  
+ </div>
+ </div>
+
+ <div class="plyer-box  df6">
+    <div class="plyer-txt ">
+       
+        <h3>27</h3>
+        <p>Levi</p> <h2> Colwill</h2>
+    
+  
+ </div>
+ </div>
+ </div>
+ <br>
+ <div id="teamx-df">
+ <div class="plyer-box  df7">
+    <div class="plyer-txt ">
+       
+        <h3>2</h3>
+       <h2> Axel<br>Disasi</h2>
+    
+  
+ </div>
+ </div>
+
+</div>
+
+<h1>MIDFIELDERS</h1>
+<div id="teamx-mf">
+    
+ <div class="plyer-box  mf1">
+    
+    <div class="plyer-txt ">
+       
+        <h3>6</h3>
+       <h2> Enzo Fernandez</h2>
+       
+  
+ </div>
+ </div>
+ <div class="plyer-box  mf2">
+    <div class="plyer-txt ">
+       
+        <h3>8</h3>
+       <h2>Mykhailo Mudryk</h2>
+    
+  
+ </div>
+ </div>
+ <div class="plyer-box  mf3">
+    
+    <div class="plyer-txt ">
+       
+        <h3>16</h3>
+      <p>Conor </p> <h2> Gallagher</h2>
+       
+  
+ </div>
+ </div>
+ </div>
+ <br><br>
+ <div id="teamx-mf">
+ <div class="plyer-box  mf4">
+    <div class="plyer-txt ">
+       
+        <h3>18</h3>
+      <p>Moises</p><h2> Caicedo</h2>
+    
+  
+ </div>
+ </div>
+ <div class="plyer-box  mf5">
+    <div class="plyer-txt ">
+       
+        <h3>20</h3>
+   <p>Lesley</p> <h2>Ugochukwu</h2>
+    
+  
+ </div>
+ </div>
+ <div class="plyer-box  mf6">
+    
+    <div class="plyer-txt ">
+       
+        <h3>21</h3>
+       <p> Casare</p><h2>Casadei</h2>
+       
+  
+ </div>
+ </div>
+ 
+</div>
+<br><br>   
+<div id="teamx-mf">
+<div class="plyer-box  mf7">
+    
+    <div class="plyer-txt ">
+       
+        <h3>22</h3>
+       <p>Cole</p><h2>Palmer</h2>
+       
+  
+ </div>
+ </div>
+</div>
+<br><br>
+<h1>FORWARD</h1>
+<div id="teamx-fd">
+    
+ <div class="plyer-box  fd1">
+    
+    <div class="plyer-txt ">
+       
+        <h3>7</h3>
+     <p>Raheem </p>   <h2> Sterling</h2>
+       
+  
+ </div>
+ </div>
+ <div class="plyer-box  fd2">
+    <div class="plyer-txt ">
+       
+        <h3>9</h3>
+      <p>Nicolas </p>   <h2>Jackson</h2>
+    
+  
+ </div>
+ </div>
+ <div class="plyer-box  fd3">
+    <div class="plyer-txt ">
+       
+        <h3>11</h3>
+      <h2>Noni Madueke</h2>
+    
+  
+ </div>
+ </div>
+ 
+</div>
+<br><br>
+<div id="teamx-fd">
+    
+    <div class="plyer-box  fd4">
+       
+       <div class="plyer-txt ">
+          
+           <h3>14</h3>
+      <h2>Christopher Nkunku</h2>
+          
+     
+    </div>
+    </div>
+    <div class="plyer-box  fd5">
+       <div class="plyer-txt ">
+          
+           <h3>19</h3>
+       <h2>Deivid Washington</h2>
+       
+     
+    </div>
+    </div>
+    </div>
+
+<br><br>
+    <h1>COACH</h1>
+    <div id="teamx-ch">
+        
+     <div class="plyer-box  ch1">
+        
+        <div class="plyer-txt ">
+           <br><br>
+           <h2>Mauricio. Pochettino</h2>
+           
+      
+     </div>
+     </div>
+     </div>
+     </div>
+     <br><br><br>
+     <div class="tble">
+        <center>
+      <table border="2" width="700" height="200" >
+      <tr>
+        <td><b>ASSISTANT COACH</b></td>
+         <td>Jesus Perez</td>
+          
+
+      </tr>
+      <tr>
+        <td><b>ASSISTANT COACH</b></td>
+        <td>Miguel D'Agostino</td>
+      </tr>
+      <tr>
+        <td><b>FITNESS COACH</b></td>
+         <td>Toni Jimenez</td>
+      </tr>
+      <tr>
+        <td><b>GOALKEEPERS COACH</b></td>
+        <td>Henrique Hilario</td>
+      </tr>
+      <tr>
+        <td><b>ASSISTANT COACH</b></td>
+        <td>Sebastino Pochettino</td>
+      </tr>
+      </table>
+    </center>
+     </div>
+             <!-- footer  below -->
+        <div class="footer ">
+            <center><p class="s-txt">FOLLOW Chelsea FC ON SOCIAL MEDIA:</p></center>
+            <div id="media">
+                
+                <div class="social-media  s-m1"><a href="https://youtube.com/@chelseafc?si=JkJ0WHyztLk4bxlv"><img src="background/pngwing.com (6).png" alt="youtube" title="link to youtube account"  width="50px">ChelseaFC</a></div>
+                <div class="social-media  s-m2"><a href="https://www.instagram.com/chelseafc?igsh=MXN3Z213aWVuOWl1OQ=="><img src="background/pngwing.com (5).png" alt="instagram" title="link to instagram account" width="50p">@ChelseaFC</a></div>
+                <div class="social-media  s-m3"><a href="https://x.com/chelseafc?s=21&t=a-0cyU1ox6Lrbel5sH9nxQ"><img src="background/pngwing.com (7).png" alt="facebook" title="link to facebook account"  width="50px">@ChelseaFC</a></div>
+                <div class="social-media  s-m4"><a href="https://www.facebook.com/ChelseaFC?mibextid=JRoKGi"><img src="background/pngwing.com (4).png" alt="twitter" title="link to twitter account"  width="50px">@ChelseaFC</a></div>
+        </div>
+    <br>
+    <div class="players">
+        <div class="g-keeper "><h4 class="player-txt">Goalkeeper</h4>
+        <ul>
+            <p>Roberto Sanchez</p>
+            <p>Djordje Petrovic</p>
+        </ul>
+        
+        </div>
+        <div class="defenders "><h4 class="player-txt">Defenders</h4>
+        <ul>
+           <p>Thiago Silva</p>
+           <p>Ben Chilwell</p>
+           <p>Reece James</p>
+           <p>Marc Cucurella</p>
+           <p>Malo Gusto</p>
+           <p>Levi Colwill</p>
+           <p>Axel Disasi</p> 
+       
+        </ul>
+        
+        
+        </div>
+        <div class="midfielders "><h4 class="player-txt">Midfielders</h4>
+        <ul>
+            <p>Enzo Fernandez</p>
+            <p>Mykhailo Mudryk</p>
+            <p>Conor Gallagher</p>
+            <p>Cole Palmer</p>
+            <p>Moises Caicedo</p>
+            <p>Lesley Ugochukwu</p>
+            <p>Casare Casadei</p>
+
+        </ul>
+      
+        
+        </div>
+        <div class="forwards "><h4 class="player-txt">Forwards</h4>
+        <ul>
+            <p>Raheem Sterling</p>
+            <p>Nicolas Jackson</p>
+            <p>Noni Madueke</p>
+            <p>Christopher Nkunku</p>
+            <p>Deivid Washington</p>
+
+        </ul>
+        
+        
+        
+        </div>
+        <div class="histry ">
+            <h4 class="player-txt">History</h4>
+        
+            <p>2008-16.The best years in our history</p>
+            <p>The era of the Dream Team</p>
+            <p>1950-1961.The Mourinho era</p>
+            <p>1909-1969.Foundation and survival</p>
+            <p>ChelseaFC in the Champions League</p>
+    
+        
+        </div>
+        
+        <div class="top">
+        <a href="index.html">HOME</a>
+        <a href="#container">BACK TO TOP</a>
+       </div>
+    </div>
+</div>
+</div>
+
+        
+</body>
+</html>

@@ -1,0 +1,404 @@
+body{
+    background-color: #1da1f2;
+}
+*{
+    box-sizing: border-box;
+}
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    /* row-gap: 10px; */
+    width: 100%;
+   
+}
+.line{
+    border: 2px solid rgb(252, 250, 250);
+
+}
+
+/* header design */
+.header{
+    display: flex;
+    flex-basis: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height: 9vh;
+    justify-content: space-between;
+    background:linear-gradient(to right,#6e35d8,#ffffff,#0000ff);
+}
+
+/* fanboy */
+.fanboy{
+    color: rgba(46, 57, 211, 0.63);
+    font-size: 30px;
+    text-shadow: 2px 2px 3px rgb(32, 196, 218);
+    transition-duration: 0.2s;
+    cursor: pointer;
+
+
+}
+.fanboy:hover{
+font-size: 40px;
+}
+/*   logo*/
+.logo-img{
+    padding-top: 20px;
+   
+}
+/* login design */
+.log-box{
+    padding-top: 30px;
+    padding-right: 10px;
+}
+
+
+
+.log{
+    width: 60px;
+    height: 28px;
+    background-color:rgb(20, 35, 173);
+    border-radius: 10px;
+   
+    
+    
+}
+.log:hover{
+  width: 65px;
+  height: 33px;
+   background-color: lightskyblue;
+}
+
+
+/*  navigation design*/
+.nav-box{
+   height: 30vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   background:linear-gradient(to left, #0000ff, #ffff);
+}
+.nav-menu{
+ display: grid;
+ grid-template-columns: repeat(4, 1fr); 
+ grid-column-gap: 20px;
+}
+.nav-menu:hover >:not(:hover){
+    opacity: 0.7;
+
+}
+
+.nav{
+    background-color:#669bbc;
+    width: 200px;
+    height: 200px;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: rgba(100,100,111,0.2) 0px 7px 29px 0px;
+    transition: all 0.4s ease-in-out;
+
+}
+
+.nav:hover{
+    transform: translateY(-15px);
+}
+/* history */
+.history{
+background-image: url(background/skysports-chelsea-stamford-bridge_5701741.jpg);
+background-size: contain;
+
+}
+.nav-txt{
+    padding-top: 110px;
+    padding-left: 20px;
+    font-size: 14px;
+}
+.nav-txt a{
+    text-decoration: none;
+    color: rgb(54, 167, 233);
+}
+
+.nav-txt a:hover{
+    color:rgb(44, 28, 185) ;
+    font-weight: bold;
+    
+    
+    
+}
+/* .selector{
+    
+} */
+
+.nav2{
+    background-image: url(chelsea/enzofernandez.png);
+    background-size: contain;
+}
+
+
+.nav3{
+    background-image: url(chelsea/mykhailomudryk.png);
+    background-size: contain;
+}
+
+.nav4{
+    background-image: url( chelsea/djordjepetrovic.png) ;
+    background-size: contain;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.box3{
+    flex-basis: 100%;
+    height: 5vh;
+    text-transform:uppercase;
+    text-align: center;
+    background-color: rgb(62, 62, 226);
+    color: rgb(52, 197, 223);
+    
+}
+.box3:hover{
+    background-color: rgb(65, 41, 202);
+    font-size: 20px;
+    height: 6vh;
+    color: rgb(56, 139, 207);
+    cursor: pointer;
+
+}
+
+/* content */
+.content{
+    flex-basis: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height:80vh ;
+    background-image: url(background/HD-wallpaper-stamford-bridge-the-bridge-london-chelsea-fc-stadium-england-football-stadium-soccer-field-chelsea-fc-stamford-bridge-inside.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.match1{
+    background-image: url(background/0_Manchester-City-vs-Chelsea.webp);
+    background-size:contain;
+    
+    height: 200px;
+    width: 310px;
+    margin: auto;
+}
+.match-txt{
+color: blue;  
+font-size: 30px; 
+ 
+}
+.match-txt:hover{
+    transform:translateY(-20px);
+    cursor: pointer;
+    background: linear-gradient(to left, #0000ff, #ffffff,#311eda);
+
+}
+.stat{
+    font-size: 20px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.stat:hover{
+    font-family: cursive;
+    cursor: pointer;
+}
+.footer{
+    flex-basis: 100%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    height:62vh ;
+    background-image: url(background/16917289381486.jpg);
+    background-size: contain;
+    background-position: cover;
+}
+/* links to top */
+.top{
+    margin: auto;
+    padding-bottom: 50px;
+
+}
+
+.top a{
+    text-decoration: none;
+    padding-left: 10px;
+}
+#media{
+display: flex;
+column-gap:7px;
+padding-top: 30px;
+/* margin: auto; */
+/* padding-left: 300px; */
+justify-content: center;
+}
+
+.social-media{
+    width: 120px;
+    height: 100px;
+    padding-left: 20px;
+    padding-top: 20px;
+     
+    
+}
+
+.social-media:hover{
+    width: 140px;
+    height: 120px;
+    border-radius: 80px;
+}
+
+.social-media a{
+    text-decoration: none;
+    font-family: monospace;
+    color:#fff;
+    
+
+}
+
+
+.s-m1{
+    background-color: #382bec;
+}
+.s-m2{
+    background: linear-gradient(45deg, #4834f9,#ffffff,#291ce2);
+}
+.s-m3{
+    background-color: #3b5998;
+   
+}
+.s-m4{
+    background-color: #1da1f2
+}
+.s-txt{
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+/* disclaimer */
+.disclaimer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    padding-bottom: 20px;
+    color: #1f9aca;
+  
+}
+
+.disclaimer p{
+    text-align: center;
+    margin: auto;
+    background-color:white;
+}
+/* players */
+*{
+    box-sizing: border-box;
+}
+.players{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    background: linear-gradient(150deg, #4e64e2,#ffffff,#0000ff);
+    
+    
+    
+}
+.player-txt{
+    text-align: center;
+    font-size: 20px;
+    color:#fff;
+   
+}
+
+.g-keeper{
+    height: auto;
+    flex-basis: 20%;
+   
+}
+
+.defenders{
+    height: 40vh;
+    flex-basis: 20%;
+   
+}
+.midfielders{
+    height: auto;
+    flex-basis: 20%;
+    
+   
+}
+
+.forwards{
+    height: auto;
+    flex-basis: 19%;
+   
+}
+.histry{
+   
+  height: auto;
+ flex-basis: 20%;
+       
+   
+}
+
+/* Dream team */
+.team-box{
+    width: 1000px;
+    margin: auto;
+}
+.plyers-nav{
+    height: 3vh;
+    padding-top: 5px;
+    background:linear-gradient( 45deg, #1da1f2,#ffffff,#235cc5);
+    padding-left: 12px;
+    margin: auto;
+    width: 63%;
+    border-radius: 12px;
+
+}
+.kpp{
+   border: 1px solid rgb(3, 3, 3); 
+   background-color: rgb(236, 230, 230);
+   border-radius: 4px;
+   transition-duration: 0.2s;
+   color: blue;
+}
+.kpp:hover {
+    background-color: rgb(4, 0, 255);
+    color: white;
+    
+    
+}
+
+.plyers-nav a{
+    text-decoration: none;
+    padding-left: 5px;
+    
+}
+.intro-txt{
+    text-shadow: 2px 2px 3px rgb(0, 140, 255);
+    color: blue;
+    transition-duration: 0.2s;
+
+}
+.intro-txt:hover{
+    text-shadow: 2px 2px 3px white;
+    cursor: pointer;
+}
+
