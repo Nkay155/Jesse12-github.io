@@ -1,5 +1,5 @@
 body{
-    background-color: #1da1f2;
+    background-color: #ffffff;
 }
 *{
     box-sizing: border-box;
@@ -24,7 +24,7 @@ body{
     flex-shrink: 0;
     height: 9vh;
     justify-content: space-between;
-    background:linear-gradient(to right,#6e35d8,#ffffff,#0000ff);
+    background:linear-gradient(to right,#6e35d8,#7992ff,#0000ff);
 }
 
 /* fanboy */
@@ -76,7 +76,7 @@ font-size: 40px;
    justify-content: center;
    align-items: center;
    width: 100%;
-   background:linear-gradient(to left, #0000ff, #ffff);
+   background:linear-gradient(to left, #0000ff, #7db3fa);
 }
 .nav-menu{
  display: grid;
@@ -142,6 +142,12 @@ background-size: contain;
 
 .nav4{
     background-image: url( chelsea/djordjepetrovic.png) ;
+    background-size: contain;
+
+}
+
+.nav5{
+    background-image: url(background/chelsea_fc_wallpaper_by_meetii_d3dhk55-fullview.jpg) ;
     background-size: contain;
 
 }
@@ -275,7 +281,7 @@ justify-content: center;
     background-color: #382bec;
 }
 .s-m2{
-    background: linear-gradient(45deg, #4834f9,#ffffff,#291ce2);
+    background: linear-gradient(45deg, #4834f9,#76b4fa,#291ce2);
 }
 .s-m3{
     background-color: #3b5998;
@@ -314,7 +320,7 @@ justify-content: center;
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
-    background: linear-gradient(150deg, #4e64e2,#ffffff,#0000ff);
+    background: linear-gradient(150deg, #4e64e2,#73b9f3,#0000ff);
     
     
     
@@ -365,7 +371,7 @@ justify-content: center;
 .plyers-nav{
     height: 3vh;
     padding-top: 5px;
-    background:linear-gradient( 45deg, #1da1f2,#ffffff,#235cc5);
+    background:linear-gradient( 45deg, #1da1f2,#749cf3,#235cc5);
     padding-left: 12px;
     margin: auto;
     width: 63%;
